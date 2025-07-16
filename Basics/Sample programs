@@ -7,3 +7,89 @@ convert_s_to_usd = soles*0.28
 convert_r_to_usd = reais*0.18
 total = convert_p_to_usd + convert_s_to_usd + convert_r_to_usd
 print("total amount in usd",total)
+
+
+#Coinflip.py
+import random
+num = random.randint(0,1)
+
+if num > 0.5:
+  print("Head")
+else:
+  print("Tail")
+
+#grade.py
+import random
+grade = random.randint(0,100)
+
+if grade >= 55:
+  print(grade)
+  print("You passed")
+else:
+  print(grade)
+  print("You failed")
+
+#ph_levels.py
+ph = int(input("Enter a value between 0 and 14"))
+if ph > 7:
+  print("Basic")
+elif ph < 7:
+  print("Acidic")
+else:
+  print("Neutral")
+
+
+#magic8.py
+import random
+Options = [
+  "Yes - definitely.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful."
+
+]
+
+Question = input("Willing to enter Question? Enter Yes or No")
+if Question == "Yes":
+  valid_question=input("Enter the Question")
+  print (valid_question)
+  print (random.choice(Options))
+else:
+  print ("Enter a Question to get output")
+
+
+# Magic 8 Ball 🎱
+
+import random
+
+question = input('Question:      ')
+
+random_number = random.randint(1, 9)
+
+if random_number == 1:
+  answer = 'Yes - definitely'
+elif random_number == 2:
+  answer = 'It is decidedly so'
+elif random_number == 3:
+  answer = 'Without a doubt'
+elif random_number == 4:
+  answer = 'Reply hazy, try again'
+elif random_number == 5:
+  answer = 'Ask again later'
+elif random_number == 6:
+  answer = 'Better not tell you now'
+elif random_number == 7:
+  answer = 'My sources say no'
+elif random_number == 8:
+  answer = 'Outlook not so good'
+elif random_number == 9:
+  answer = 'Very doubtful'
+else:
+  answer = 'Error'
+  
+print('Magic 8 Ball:  ' + answer)
