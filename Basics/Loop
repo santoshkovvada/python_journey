@@ -1,0 +1,84 @@
+# enter_pin.py
+print ("Bank of Python")
+
+pin = int(input("Enter the four didgit pin"))
+
+while pin != 1234:
+  pin = int(input("Incorrect pin !! re-enter the pin "))
+if pin == 1234:
+  print ("Pin is correct")
+
+# guess.py
+
+guess=0
+tries=0
+
+while guess != 6 and tries <= 5:
+  guess = int(input("Guess the number:"))
+  tries = tries + 1
+  print ("Tries number" , tries)
+
+if guess ==6:
+  print ("Correct guess")
+else:
+    print("Incorrect guess"  )
+    print("6 Limit exhuated ")
+
+
+# detention.py
+tries=0
+for i in range (100):
+  print (" I will not use snapchat in class")
+  tries+=1
+
+print ("Task completed no of  times: ", tries)
+
+
+# string.py
+'''
+#string concatenation
+for i in range(5):
+  print ("Square of" + str(i) + "is" + str(i*i))
+'''
+'''
+#String interpolation
+for i in range(5):
+  print (f"Square of {i} is {i*i}")
+'''
+for i in range(99, 0, -1):
+  print(f'{i} bottles of beer on the wall')
+  print(f'{i} bottles of beer')
+  print('Take one down, pass it around')
+  if i>=2:
+    print(f'{i-1} bottles of beer on the wall')
+print("No more bottles of beer on the wall, no more bottles of beer.")
+print("Go to the store and buy some more, 99 bottles of beer on the wall.")
+
+#fizz_buzz.py
+'''
+
+for i in range (1,101,+1):
+  if i % 15 == 0:
+    print("FizzBuzz")
+  elif i % 3 == 0:
+    print("Fizz")
+  elif i % 5 == 0:
+    print("Buzz")
+  else:
+    print (i)
+'''
+
+
+for i in range (1,101,+1):
+  if i % 3==0 and i % 5==0:
+    print ("FizzBuzz")
+  elif i % 3 == 0:
+    print("Fizz")
+  elif i % 5 == 0:
+    print("Buzz")
+  else:
+    print (i)
+
+
+
+
