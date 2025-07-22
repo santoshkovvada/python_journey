@@ -1,0 +1,23 @@
+# script.py
+grocery =['Eggs','Avocado','Cookies','Hot Pepper Jam' , 'Blueberries' ,'Broccoli']
+print(grocery)
+
+# script.py
+todo =['🏦 Get quarters.','🧺 Do laundry.','🌳 Take a walk.','💈 Get a haircut.','🍵 Make some tea.','💻 Complete Lists chapter.','💖 Call mom.','📺 Watch My Hero Academia.']
+print(todo[0],todo[1])
+print(todo[2:5])
+#print(todo[8]) # index error out of range
+# reading_list.py
+
+book=['Harry Potter',
+'1984',
+'The Fault in Our Stars',
+'The Mom Test',
+'Life in Code']
+print(book)
+book.append('Pachinko')
+print(book)
+book.remove('The Fault in Our Stars')
+print(book)
+book.pop(1)
+print(book)
